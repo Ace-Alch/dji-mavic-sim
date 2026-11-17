@@ -10,6 +10,17 @@ MATLAB · Simulink · PID · Dynamics
 [Project record](#study-record) · [Design](portfolio/DESIGN.md) · [Setup](portfolio/SETUP.md) · [Validation](portfolio/VALIDATION.md) · [Evidence](portfolio/EVIDENCE.md)
 </div>
 
+<!-- project-navigation:start -->
+<p align="center">
+  <a href="https://ace-alch.github.io/work/dji-mavic-sim/"><img alt="View project" src="https://img.shields.io/badge/View%20project-a78bfa?style=for-the-badge&logo=githubpages&logoColor=white"></a>
+  <a href="portfolio/DESIGN.md"><img alt="Explore design" src="https://img.shields.io/badge/Explore%20design-30363d?style=for-the-badge&logo=readthedocs&logoColor=white"></a>
+  <a href="portfolio/SETUP.md"><img alt="Setup guide" src="https://img.shields.io/badge/Setup%20guide-30363d?style=for-the-badge&logo=github&logoColor=white"></a>
+  <a href="portfolio/EVIDENCE.md"><img alt="Check evidence" src="https://img.shields.io/badge/Check%20evidence-30363d?style=for-the-badge&logo=readthedocs&logoColor=white"></a>
+</p>
+<p align="center"><strong>Simulation</strong> &nbsp; / &nbsp; Engineering &nbsp; / &nbsp; <a href="https://ace-alch.github.io/">Mehdi's portfolio</a></p>
+<!-- project-navigation:end -->
+
+
 ## Study record
 
 | Item | Record |
@@ -47,7 +58,8 @@ The available Simulink model establishes a simulation artifact. Flight-hardware 
 
 This image is an existing repository artifact. It is not evidence of a new test.
 
-## Available material
+<details>
+<summary><strong>Browse source files and project artifacts</strong></summary>
 
 | Path | Type |
 | :-- | :-- |
@@ -65,6 +77,8 @@ This image is an existing repository artifact. It is not evidence of a new test.
 | [Docs/images/5.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/5.jpg) | .jpg |
 
 See the [complete source inventory](portfolio/SOURCE-INVENTORY.md) for all inspected file paths.
+
+</details>
 
 ## Next evidence
 
