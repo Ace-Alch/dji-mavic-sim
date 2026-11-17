@@ -1,94 +1,80 @@
-#  DJI Mavic Pro Simulation in MATLAB/Simulink
+<div align="center">
+<img src="portfolio-assets/cover.svg" width="100%" alt="DJI Mavic Pro Simulation project cover">
 
-This project simulates the dynamics, actuation, and control of a DJI Mavic Pro drone using MATLAB and Simulink. The model includes battery behavior, BLDC motor dynamics, propeller thrust, aerodynamic drag, and a closed-loop PID controller.
+# DJI Mavic Pro Simulation
 
-<p align="center">
-  <img src="Docs/images/1.jpg" width="60%" alt="DJI Mavic Sim"/>
-</p>
+**Model quadcopter dynamics, power components and PID flight control.**
 
----
+MATLAB · Simulink · PID · Dynamics
 
-##  Model Overview
+[Overview](#overview) · [Design](portfolio/DESIGN.md) · [Setup](portfolio/SETUP.md) · [Validation](portfolio/VALIDATION.md) · [Evidence](portfolio/EVIDENCE.md)
+</div>
 
-- **Drone:** DJI Mavic Pro
-- **Weight:** 0.743 kg
-- **Motor KV:** 1400 RPM/V
-- **Battery:** 11.4V, 77A max (3s LiPo)
-- **Propeller Size:** 8x4"
-- **Structure:** X-frame quadcopter (335 mm diagonal)
-- **Simulation Includes:**
-  - Motor–Prop–Battery coupling
-  - Blade element theory for thrust
-  - Torque loading & current consumption
-  - Linear & rotational dynamics
-  - External disturbances (wind, drag)
-  - Full control loop (PID)
+## Overview
 
----
+| Item | Record |
+| :-- | :-- |
+| Project type | Simulation |
+| Field | Engineering |
+| Material in this package | Existing repository inspected |
+| Documentation review | 17 November 2026 |
 
-##  Mathematical Modeling
+## Scope
 
-Key equations used:
+Model quadcopter dynamics, power components and PID flight control. The documentation separates the stated project scope, inspected artifacts and future work. A listed feature is not a new test result.
 
-- **Thrust:**  
-  `T = C_T * ρ * n² * D⁴`
+### Main elements
 
-- **Motor Current from Torque:**  
-  `I = Torque × Kᵥ`
+- Battery
+- Motors and propellers
+- Rigid-body dynamics
+- PID control
 
-- **Drag Force:**  
-  `F_drag = 0.5 * ρ * A * V² * C_d`
+## Start here
 
-- **Rotational Dynamics:**  
-  `M = I × θ̈`
+1. Read the [design record](portfolio/DESIGN.md) for the system elements and boundaries.
+2. Follow the [setup record](portfolio/SETUP.md) for available entry points.
+3. Use the [validation plan](portfolio/VALIDATION.md) to record reproducible results.
+4. Check the [evidence register](portfolio/EVIDENCE.md) before reusing claims.
 
-More derivations and visuals available in [`Docs/images/`](Docs/images).
+## Technical limits
 
----
+The available Simulink model establishes a simulation artifact. Flight-hardware validation is not established. The previous README referenced a missing model-diagram image and LICENSE file. Those links are omitted here. The motor current equation in the previous text needs a unit and motor-constant check before reuse.
 
-##  System Block Diagram
+## Project preview
 
-<p align="center">
-  <img src="Docs/images/model-diagram.jpg" width="65%">
-</p>
+![Project artifact](Docs/images/1.jpg)
 
----
+This image is an existing repository artifact. It is not evidence of a new test.
 
-##  File Structure
+## Available material
 
-| Folder           | Description                                 |
-|------------------|---------------------------------------------|
-| `Simulink_Model` | Main simulation `.slx` and model blocks     |
-| `MATLAB_Code`    | Parameter extraction, plots, data fits      |
-| `Docs`           | All handwritten analysis and visual notes   |
+| Path | Type |
+| :-- | :-- |
+| [Docs/images/1.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/1.jpg) | .jpg |
+| [Docs/images/10.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/10.jpg) | .jpg |
+| [Docs/images/11.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/11.jpg) | .jpg |
+| [Docs/images/12.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/12.jpg) | .jpg |
+| [Docs/images/13.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/13.jpg) | .jpg |
+| [Docs/images/14.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/14.jpg) | .jpg |
+| [Docs/images/15.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/15.jpg) | .jpg |
+| [Docs/images/16.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/16.jpg) | .jpg |
+| [Docs/images/2.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/2.jpg) | .jpg |
+| [Docs/images/3.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/3.jpg) | .jpg |
+| [Docs/images/4.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/4.jpg) | .jpg |
+| [Docs/images/5.jpg](https://github.com/Ace-Alch/dji-mavic-sim/blob/main/Docs/images/5.jpg) | .jpg |
 
----
+See the [complete source inventory](portfolio/SOURCE-INVENTORY.md) for all inspected file paths.
 
-##  Features
+## Next work
 
-- Full 3D drone model with XYZ and rotational DOF
-- Aerodynamic and electrical interaction modeling
-- Custom battery and motor behavior estimation
-- Modular and easy to modify for different drone specs
-- Clean structure and well-documented equations
+- [ ] MATLAB release and toolbox list
+- [ ] Parameter initialization
+- [ ] Reproducible scenario
+- [ ] Validation against measured flight data
 
----
+## Credits and reuse
 
-##  Analysis Preview
+Project record: Mehdi Moallemkolaei. Specific third-party and course contributions must retain their original notices.
 
-| Propeller Analysis | Rotational Dynamics | System Forces |
-|--------------------|---------------------|----------------|
-| ![prop](Docs/images/7.jpg) | ![rot](Docs/images/11.jpg) | ![forces](Docs/images/16.jpg) |
-
----
-
-##  Future Work
-
-- Build hardware prototype (ESP32/Pixhawk)
-
----
-
-##  License
-
-MIT License. See [LICENSE](LICENSE) for details.
-
+Existing license terms remain in effect. This package does not grant a new license over source code, course material, models or datasets. See [reuse and contribution notes](portfolio/CONTRIBUTIONS.md).
