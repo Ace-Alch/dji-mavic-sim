@@ -1,5 +1,5 @@
 <div align="center">
-<img src="portfolio-assets/cover.svg" width="100%" alt="DJI Mavic Pro Simulation project cover">
+<img src="https://raw.githubusercontent.com/Ace-Alch/Ace-Alch.github.io/main/banners/dji-mavic-sim.webp" width="100%" alt="dji-mavic-sim — project concept artwork">
 
 # DJI Mavic Pro Simulation
 
