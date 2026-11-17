@@ -1,0 +1,24 @@
+{
+  "slug": "dji-mavic-sim",
+  "name": "Flight dynamics",
+  "motif": "flight",
+  "background": "#14202e",
+  "ink": "#e7eff4",
+  "accent": "#8bc6e6",
+  "layout": "research",
+  "canvas": {
+    "width": 3840,
+    "height": 1440,
+    "viewBox": [
+      0,
+      0,
+      1920,
+      720
+    ]
+  },
+  "font": "Georgia",
+  "contrast": {
+    "body": 14.15,
+    "accent": 8.87
+  }
+}

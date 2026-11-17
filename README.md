@@ -7,10 +7,10 @@
 
 MATLAB · Simulink · PID · Dynamics
 
-[Overview](#overview) · [Design](portfolio/DESIGN.md) · [Setup](portfolio/SETUP.md) · [Validation](portfolio/VALIDATION.md) · [Evidence](portfolio/EVIDENCE.md)
+[Project record](#study-record) · [Design](portfolio/DESIGN.md) · [Setup](portfolio/SETUP.md) · [Validation](portfolio/VALIDATION.md) · [Evidence](portfolio/EVIDENCE.md)
 </div>
 
-## Overview
+## Study record
 
 | Item | Record |
 | :-- | :-- |
@@ -19,18 +19,18 @@ MATLAB · Simulink · PID · Dynamics
 | Material in this package | Existing repository inspected |
 | Documentation review | 17 November 2026 |
 
-## Scope
+## Research scope
 
 Model quadcopter dynamics, power components and PID flight control. The documentation separates the stated project scope, inspected artifacts and future work. A listed feature is not a new test result.
 
-### Main elements
+### Model and method
 
 - Battery
 - Motors and propellers
 - Rigid-body dynamics
 - PID control
 
-## Start here
+## Explore the study
 
 1. Read the [design record](portfolio/DESIGN.md) for the system elements and boundaries.
 2. Follow the [setup record](portfolio/SETUP.md) for available entry points.
@@ -66,7 +66,7 @@ This image is an existing repository artifact. It is not evidence of a new test.
 
 See the [complete source inventory](portfolio/SOURCE-INVENTORY.md) for all inspected file paths.
 
-## Next work
+## Next evidence
 
 - [ ] MATLAB release and toolbox list
 - [ ] Parameter initialization
@@ -78,3 +78,10 @@ See the [complete source inventory](portfolio/SOURCE-INVENTORY.md) for all inspe
 Project record: Mehdi Moallemkolaei. Specific third-party and course contributions must retain their original notices.
 
 Existing license terms remain in effect. This package does not grant a new license over source code, course material, models or datasets. See [reuse and contribution notes](portfolio/CONTRIBUTIONS.md).
+
+
+---
+
+![Project design system](portfolio-assets/section.svg)
+
+[Visual design notes](portfolio/VISUAL-DESIGN.md) · [Design tokens](portfolio/design-tokens.json)
